@@ -22,4 +22,4 @@ Sum = 130 Pair is (60,70)
 
 If the sum is not found, print nodes are not found.
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/chandrima0503/chandrima_Lab3/blob/main/Screenshot%202022-07-25%20at%208.47.38%20PM.png)
