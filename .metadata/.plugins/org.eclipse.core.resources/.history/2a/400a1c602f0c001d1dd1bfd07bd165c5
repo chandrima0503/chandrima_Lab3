@@ -6,10 +6,8 @@ class bracketsCheck {
 		String expr = "([{}])";
 		 
         if (areBracketsBalanced(expr))
-        	//If Stack is empty then print the brackets are balanced
             System.out.println("The entered string has balanced brackets.");
         else
-        	//If Stack is not empty then print the brackets are balanced
             System.out.println("The entered string does not have balanced brackets.");
 	}
 	

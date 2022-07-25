@@ -22,6 +22,14 @@ public class FindSum {
 		}
 	}
 	
+	static Node newNode(int key) {
+		Node temp=new Node(key);
+		temp.left=null;
+		temp.right=null;
+		
+		return temp;
+	}
+	
 	//insert method to enter data into tree into either left or right node
 	private Node insert(Node root, int i) {
 		if (root==null) {
@@ -29,11 +37,9 @@ public class FindSum {
             return root;
         }
         if (i < root.data) {
-        	//If inserted value is less than root data then insert in left of root
             root.left = insert(root.left, i);
         }
         else{
-        	//If inserted value is more than root data then insert in right of root
             root.right=insert(root.right,i);
             }
         return root;
