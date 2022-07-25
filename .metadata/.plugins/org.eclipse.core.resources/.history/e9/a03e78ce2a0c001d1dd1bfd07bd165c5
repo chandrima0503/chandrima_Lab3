@@ -1,0 +1,44 @@
+package com.greatlearning.SumfromBST;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Scanner;
+
+public class FindSum {
+	ArrayList<Integer> list=new ArrayList<Integer>();
+    int count=0;
+    
+	public static class Node {
+		int data;
+		public Node left;
+		public Node right;
+		
+		public Node(int data) {
+			super();
+			this.data = data;
+		}
+	}
+	
+	static Node newNode(int key) {
+		Node temp=new Node(key);
+		temp.left=null;
+		temp.right=null;
+		
+		return temp;
+	}
+	
+	private Node insert(Node root, int i) {
+		if (root==null) {
+            root=new Node(i);
+            return root;
+        }
+        if (i < root.data) {
+            root.left = insert(root.left, i);
+        }
+        else{
+            root.right=insert(root.right,i);
+            }
+        return root;
+	}
+}

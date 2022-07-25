@@ -1,0 +1,23 @@
+package com.greatlearning.SumfromBST;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Scanner;
+
+public class FindSum {
+	public static class Node {
+		int data;
+		public Node left;
+		public Node right;
+		
+		public Node(int data) {
+			super();
+			this.data = data;
+		}
+	}
+	
+	public BSTDemo {
+		
+	}
+}

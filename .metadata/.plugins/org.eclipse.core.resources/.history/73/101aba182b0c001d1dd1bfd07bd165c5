@@ -2,6 +2,7 @@ package com.greatlearning.SumfromBST;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Scanner;
 
 public class FindSum {
@@ -100,7 +101,6 @@ public class FindSum {
         int sum=sc.nextInt();
         System.out.print("Inorder Traversal :");
         pair.FindPairSum(root,sum);
-        sc.close();
     }
 }
     

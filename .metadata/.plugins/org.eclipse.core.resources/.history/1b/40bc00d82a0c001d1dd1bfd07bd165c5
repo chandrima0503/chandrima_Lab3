@@ -2,6 +2,7 @@ package com.greatlearning.SumfromBST;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Scanner;
 
 public class FindSum {
@@ -80,27 +81,4 @@ public class FindSum {
             }
 
         }
-     }
-    public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        Node root=null;
-        FindSum pair=new FindSum();
-        root=pair.insert(null,40);
-        pair.insert(root,20);
-        pair.insert(root,60);
-        pair.insert(root,10);
-        pair.insert(root,30);
-        pair.insert(root,50);
-        pair.insert(root,70);
-
-        System.out.print("The elements of the tree are :");
-        pair.InOrder(root);
-        System.out.println("");
-        System.out.println("Please Enter the Target Sum: ");
-        int sum=sc.nextInt();
-        System.out.print("Inorder Traversal :");
-        pair.FindPairSum(root,sum);
-        sc.close();
-    }
 }
-    
